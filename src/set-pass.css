@@ -1,0 +1,40 @@
+/* Contenedor principal */
+.two-column-container {
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+/* Columna izquierda */
+.left-column {
+  flex: 1;
+}
+
+/* Columna derecha */
+.right-column {
+  flex: 1;
+}
+
+/* Contenido de la izquierda */
+.left-content {
+  padding: 20px;
+}
+
+/* Contenido de la derecha */
+.right-content {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+
+  .left-content,
+  .right-content {
+    padding: 10px;
+  }
+}
