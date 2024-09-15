@@ -1,6 +1,7 @@
 import { Col, Input, Button, Form } from 'antd';
 import 'antd/dist/reset.css'; // Importa los estilos de Ant Design
 import './../set-pass.css'; // Archivo CSS personalizado
+import proma from './../assets/proma.png';
 
 interface SetPasswordProps {
   actualizarEstado: (nuevoValor: boolean) => void; // Función que toma un string y no retorna nada
@@ -18,8 +19,13 @@ const SetPassword: React.FC<SetPasswordProps> = ({ actualizarEstado }) => {
     <div className="two-column-container">
       <Col className="login-form" xs={24} md={24}>
         <div>
+
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '5%', marginTop: '10%' }}>
+            <img src={proma} alt="Descripción de la imagen" style={{ width: '100px', height: '100px' }} />
+          </div>
+
           <h2 style={{ textAlign: 'center' }}>Set New Password</h2>
-          <p style={{ textAlign: 'center', marginBottom: '80%' }}>Please enter your new password to continue.</p>
+          <p style={{ textAlign: 'center', marginBottom: '50%' }}>Please enter your new password to continue.</p>
 
           <Form
             name="set-password"
